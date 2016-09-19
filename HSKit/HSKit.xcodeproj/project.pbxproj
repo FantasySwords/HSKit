@@ -16,6 +16,9 @@
 		28617A8A1D87CEB40082D76B /* UIAlertView+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A891D87CEB40082D76B /* UIAlertView+HSKit.m */; };
 		28617A8E1D8E3AD20082D76B /* UIView+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A8D1D8E3AD20082D76B /* UIView+HSKit.m */; };
 		28617A921D8E51270082D76B /* NSDate+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A911D8E51270082D76B /* NSDate+HSKit.m */; };
+		BAC62BF21D8FB0FF003A7242 /* UILabel+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC62BF11D8FB0FF003A7242 /* UILabel+HSKit.m */; };
+		BAC62BF51D8FBFED003A7242 /* UIButton+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC62BF41D8FBFED003A7242 /* UIButton+HSKit.m */; };
+		BAF741051D8FFB8400322A38 /* UIControl+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF741041D8FFB8400322A38 /* UIControl+HSKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,12 @@
 		28617A8D1D8E3AD20082D76B /* UIView+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HSKit.m"; sourceTree = "<group>"; };
 		28617A901D8E51260082D76B /* NSDate+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HSKit.h"; sourceTree = "<group>"; };
 		28617A911D8E51270082D76B /* NSDate+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HSKit.m"; sourceTree = "<group>"; };
+		BAC62BF01D8FB0FF003A7242 /* UILabel+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HSKit.h"; sourceTree = "<group>"; };
+		BAC62BF11D8FB0FF003A7242 /* UILabel+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HSKit.m"; sourceTree = "<group>"; };
+		BAC62BF31D8FBFED003A7242 /* UIButton+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HSKit.h"; sourceTree = "<group>"; };
+		BAC62BF41D8FBFED003A7242 /* UIButton+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HSKit.m"; sourceTree = "<group>"; };
+		BAF741031D8FFB8400322A38 /* UIControl+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+HSKit.h"; sourceTree = "<group>"; };
+		BAF741041D8FFB8400322A38 /* UIControl+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+HSKit.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,12 @@
 				28617A891D87CEB40082D76B /* UIAlertView+HSKit.m */,
 				28617A8C1D8E3AD20082D76B /* UIView+HSKit.h */,
 				28617A8D1D8E3AD20082D76B /* UIView+HSKit.m */,
+				BAC62BF01D8FB0FF003A7242 /* UILabel+HSKit.h */,
+				BAC62BF11D8FB0FF003A7242 /* UILabel+HSKit.m */,
+				BAC62BF31D8FBFED003A7242 /* UIButton+HSKit.h */,
+				BAC62BF41D8FBFED003A7242 /* UIButton+HSKit.m */,
+				BAF741031D8FFB8400322A38 /* UIControl+HSKit.h */,
+				BAF741041D8FFB8400322A38 /* UIControl+HSKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -146,7 +161,7 @@
 		28617A641D87CD260082D76B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jerry Ho";
 				TargetAttributes = {
 					28617A6B1D87CD270082D76B = {
@@ -193,8 +208,11 @@
 				28617A921D8E51270082D76B /* NSDate+HSKit.m in Sources */,
 				28617A771D87CD270082D76B /* ViewController.m in Sources */,
 				28617A8A1D87CEB40082D76B /* UIAlertView+HSKit.m in Sources */,
+				BAF741051D8FFB8400322A38 /* UIControl+HSKit.m in Sources */,
+				BAC62BF51D8FBFED003A7242 /* UIButton+HSKit.m in Sources */,
 				28617A741D87CD270082D76B /* AppDelegate.m in Sources */,
 				28617A8E1D8E3AD20082D76B /* UIView+HSKit.m in Sources */,
+				BAC62BF21D8FB0FF003A7242 /* UILabel+HSKit.m in Sources */,
 				28617A711D87CD270082D76B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,8 +253,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -258,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -280,8 +300,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -297,7 +319,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,7 +332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HSKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thinkcode.HSKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -322,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HSKit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thinkcode.HSKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

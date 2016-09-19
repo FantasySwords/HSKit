@@ -16,6 +16,10 @@ static const long long HS_HOUR_UNIT =   3600;
 static const long long HS_DAY_UNIT =    86400;
 static const long long HS_WEEK_UNIT =   604800;
 
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wdeprecated-declarations"
+
 + (NSDate *)dateWithYear:(NSInteger)year
                    month:(NSInteger)month
                      day:(NSInteger)day
@@ -210,5 +214,7 @@ static const long long HS_WEEK_UNIT =   604800;
 - (BOOL) isInPast{
     return ([self isEarlierThanDate:[NSDate date]]);
 }
+
+#pragma clang diagnostic pop
 
 @end

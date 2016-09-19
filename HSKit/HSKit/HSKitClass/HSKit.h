@@ -16,6 +16,9 @@
 
 /*UIKit*/
 #import "UIView+HSKit.h"
+#import "UIControl+HSKit.h"
+#import "UILabel+HSKit.h"
+#import "UIButton+HSKit.h"
 #import "UIAlertView+HSKit.h"
 
 #endif

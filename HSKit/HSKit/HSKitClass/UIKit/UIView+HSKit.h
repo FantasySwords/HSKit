@@ -30,5 +30,4 @@
 @property (nonatomic, assign) CGPoint origin;
 @property (nonatomic, assign) CGSize size;
 
-
 @end

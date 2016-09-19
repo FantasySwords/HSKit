@@ -21,6 +21,21 @@
     NSDate * date = [NSDate dateWithYear:2016 month:9 day:17 hour:14 minute:16 second:00];
     date = [NSDate dateYesterday];
     NSLog(@"%ld %ld %ld %ld %ld %ld", date.year, date.month, date.day, date.hour, date.minute, date.second);
+    
+    
+    UILabel * label = [UILabel label].hs_frame(CGRectMake(0, 0, 100, 100))
+    .hs_font([UIFont systemFontOfSize:15])
+    .hs_textColor([UIColor purpleColor])
+    .hs_numberOfLines(0)
+    .hs_backgroundColor([UIColor lightGrayColor]);
+    
+    label.hs_text(@"你好");
+   
+    [self.view addSubview:label];
+    
+    UIButton * button = [UIButton button].hs_frame(CGRectMake(0, 200, 100, 100)).hs_backgroundColor([UIColor lightGrayColor]).hs_setTitle(@"按钮", UIControlStateNormal);
+    
+    [self.view addSubview:button];
 }
 
 - (void)didReceiveMemoryWarning {
