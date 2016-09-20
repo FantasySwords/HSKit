@@ -20,7 +20,7 @@
 #import "UILabel+HSKit.h"
 #import "UIButton+HSKit.h"
 #import "UIAlertView+HSKit.h"
-
+#import "UIColor+HSKit.h"
 #endif
 
 #endif /* HSKit_h */

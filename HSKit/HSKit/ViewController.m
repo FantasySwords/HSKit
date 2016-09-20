@@ -36,8 +36,33 @@
     UIButton * button = [UIButton button].hs_frame(CGRectMake(0, 200, 100, 100)).hs_backgroundColor([UIColor lightGrayColor]).hs_setTitle(@"按钮", UIControlStateNormal);
     
     [self.view addSubview:button];
+    
+    //[button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+    [button setTitleColorExt:[UIColor blueColor] forState:HSControlStateMaskHighlighted | HSControlStateMaskNormal];
+    
+    [button addActionForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
+        NSLog(@"1");
+    }];
+    
+    NSLog(@"%@",button.allTargets);
+    
+    
+    [button addTarget:self action:@selector(clicked) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchDragInside];
+    
+  
+   
 }
 
+- (void)clicked
+{
+    NSLog(@"2");
+}
+
+- (void)move{
+    NSLog(@"3");
+}
+    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

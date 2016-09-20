@@ -16,6 +16,8 @@
 		28617A8A1D87CEB40082D76B /* UIAlertView+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A891D87CEB40082D76B /* UIAlertView+HSKit.m */; };
 		28617A8E1D8E3AD20082D76B /* UIView+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A8D1D8E3AD20082D76B /* UIView+HSKit.m */; };
 		28617A921D8E51270082D76B /* NSDate+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28617A911D8E51270082D76B /* NSDate+HSKit.m */; };
+		28FF6BA11D9143660002325E /* UIColor+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FF6BA01D9143660002325E /* UIColor+HSKit.m */; };
+		28FF6BA51D9143D30002325E /* HSBlockTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FF6BA41D9143D30002325E /* HSBlockTarget.m */; };
 		BAC62BF21D8FB0FF003A7242 /* UILabel+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC62BF11D8FB0FF003A7242 /* UILabel+HSKit.m */; };
 		BAC62BF51D8FBFED003A7242 /* UIButton+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC62BF41D8FBFED003A7242 /* UIButton+HSKit.m */; };
 		BAF741051D8FFB8400322A38 /* UIControl+HSKit.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF741041D8FFB8400322A38 /* UIControl+HSKit.m */; };
@@ -39,6 +41,10 @@
 		28617A8D1D8E3AD20082D76B /* UIView+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HSKit.m"; sourceTree = "<group>"; };
 		28617A901D8E51260082D76B /* NSDate+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HSKit.h"; sourceTree = "<group>"; };
 		28617A911D8E51270082D76B /* NSDate+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HSKit.m"; sourceTree = "<group>"; };
+		28FF6B9F1D9143660002325E /* UIColor+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HSKit.h"; sourceTree = "<group>"; };
+		28FF6BA01D9143660002325E /* UIColor+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HSKit.m"; sourceTree = "<group>"; };
+		28FF6BA31D9143D30002325E /* HSBlockTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSBlockTarget.h; sourceTree = "<group>"; };
+		28FF6BA41D9143D30002325E /* HSBlockTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSBlockTarget.m; sourceTree = "<group>"; };
 		BAC62BF01D8FB0FF003A7242 /* UILabel+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HSKit.h"; sourceTree = "<group>"; };
 		BAC62BF11D8FB0FF003A7242 /* UILabel+HSKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HSKit.m"; sourceTree = "<group>"; };
 		BAC62BF31D8FBFED003A7242 /* UIButton+HSKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+HSKit.h"; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 		28617A861D87CE600082D76B /* HSKitClass */ = {
 			isa = PBXGroup;
 			children = (
+				28FF6BA21D9143D30002325E /* Public */,
 				28617A8F1D8E493B0082D76B /* Foundation */,
 				28617A871D87CE600082D76B /* UIKit */,
 				28617A8B1D8E38FC0082D76B /* HSKit.h */,
@@ -122,6 +129,8 @@
 				BAC62BF41D8FBFED003A7242 /* UIButton+HSKit.m */,
 				BAF741031D8FFB8400322A38 /* UIControl+HSKit.h */,
 				BAF741041D8FFB8400322A38 /* UIControl+HSKit.m */,
+				28FF6B9F1D9143660002325E /* UIColor+HSKit.h */,
+				28FF6BA01D9143660002325E /* UIColor+HSKit.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -133,6 +142,15 @@
 				28617A911D8E51270082D76B /* NSDate+HSKit.m */,
 			);
 			path = Foundation;
+			sourceTree = "<group>";
+		};
+		28FF6BA21D9143D30002325E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				28FF6BA31D9143D30002325E /* HSBlockTarget.h */,
+				28FF6BA41D9143D30002325E /* HSBlockTarget.m */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +184,7 @@
 				TargetAttributes = {
 					28617A6B1D87CD270082D76B = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = C9Z5JBMD89;
 					};
 				};
 			};
@@ -206,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28617A921D8E51270082D76B /* NSDate+HSKit.m in Sources */,
+				28FF6BA51D9143D30002325E /* HSBlockTarget.m in Sources */,
 				28617A771D87CD270082D76B /* ViewController.m in Sources */,
 				28617A8A1D87CEB40082D76B /* UIAlertView+HSKit.m in Sources */,
 				BAF741051D8FFB8400322A38 /* UIControl+HSKit.m in Sources */,
@@ -214,6 +234,7 @@
 				28617A8E1D8E3AD20082D76B /* UIView+HSKit.m in Sources */,
 				BAC62BF21D8FB0FF003A7242 /* UILabel+HSKit.m in Sources */,
 				28617A711D87CD270082D76B /* main.m in Sources */,
+				28FF6BA11D9143660002325E /* UIColor+HSKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Z5JBMD89;
 				INFOPLIST_FILE = HSKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -343,6 +365,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C9Z5JBMD89;
 				INFOPLIST_FILE = HSKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

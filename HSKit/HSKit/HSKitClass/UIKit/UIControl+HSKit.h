@@ -19,4 +19,9 @@ typedef NS_OPTIONS(NSUInteger, HSControlStateMask) {
 
 @interface UIControl (HSKit)
 
+- (void)addActionForControlEvents:(UIControlEvents)controlEvents block:(void (^)(id sender))block;
+
+- (void)removeBlockForControlEvents:(UIControlEvents)controlEvents;
+
+
 @end

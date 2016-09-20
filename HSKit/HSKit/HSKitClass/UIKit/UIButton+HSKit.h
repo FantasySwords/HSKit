@@ -33,19 +33,19 @@
  * 可以使用掩码的方式，设置对应State，比如 HSControlStateNormalMask | HSControlStateHighlightedMask，可以同时配置normal和highlighted状态下的控件内容
  *
  */
-- (void)setTitleExt:(nullable NSString *)title forState:(HSControlStateMask)mask;
+- (void)setTitleExt:(NSString *)title forState:(HSControlStateMask)mask;
 
 
-- (void)setTitleColorExt:(nullable UIColor *)color forState:(HSControlStateMask)mask;
+- (void)setTitleColorExt:(UIColor *)color forState:(HSControlStateMask)mask;
 
 
-- (void)setImageExt:(nullable UIImage *)image forState:(HSControlStateMask)mask;
+- (void)setImageExt:(UIImage *)image forState:(HSControlStateMask)mask;
 
 
-- (void)setBackgroundImageExt:(nullable UIImage *)image forState:(HSControlStateMask)mask;
+- (void)setBackgroundImageExt:(UIImage *)image forState:(HSControlStateMask)mask;
 
 
-- (void)setAttributedTitleExt:(nullable NSAttributedString *)title forState:(HSControlStateMask)mask NS_AVAILABLE_IOS(6_0);
+- (void)setAttributedTitleExt:(NSAttributedString *)title forState:(HSControlStateMask)mask NS_AVAILABLE_IOS(6_0);
 
 
 
