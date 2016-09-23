@@ -27,7 +27,7 @@
     .hs_font([UIFont systemFontOfSize:15])
     .hs_textColor([UIColor purpleColor])
     .hs_numberOfLines(0)
-    .hs_backgroundColor([UIColor lightGrayColor]);
+    .hs_backgroundColor([UIColor colorWithHexString:@"#ddd"]);
     
     label.hs_text(@"你好");
    
@@ -42,27 +42,20 @@
     [button setTitleColorExt:[UIColor blueColor] forState:HSControlStateMaskHighlighted | HSControlStateMaskNormal];
     
     [button addActionForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
-        NSLog(@"1");
+        
+         UIColor * color = [UIColor colorWithHexString:@"0xddd"];
+        label.backgroundColor = [UIColor colorWithHexString: color.rgbHexString];
+        
+       
+        
+        
+        NSLog(@"%0lx, %@", (unsigned long)color.rgbValue, color.rgbHexString);
     }];
     
-    NSLog(@"%@",button.allTargets);
-    
-    
-    [button addTarget:self action:@selector(clicked) forControlEvents:UIControlEventTouchUpInside | UIControlEventTouchDragInside];
-    
-  
    
 }
 
-- (void)clicked
-{
-    NSLog(@"2");
-}
 
-- (void)move{
-    NSLog(@"3");
-}
-    
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
